@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block content%}
+    
+    <div class="mycontainer">
+        {% for donut in donuts %}
+            <div class="mya">
+                <img src={{donut.image_url}}>
+                <p>{{donut.name}}</p>
+            </div>
+        {% endfor %}
+    </div>
+         
+{%endblock%}
