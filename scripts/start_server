@@ -1,0 +1,4 @@
+
+#!/bin/bash
+cd /home/ec2-user
+sudo nohup python3 manage.py runserver 80 &
